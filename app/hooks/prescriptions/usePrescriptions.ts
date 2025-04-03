@@ -11,7 +11,6 @@ import {
   deleteDoc,
   query,
   where,
-  DocumentData
 } from "firebase/firestore";
 import { useCategories } from "../shared/useCategories";
 

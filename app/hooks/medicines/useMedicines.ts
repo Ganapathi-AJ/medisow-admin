@@ -11,8 +11,6 @@ import {
   deleteDoc,
   query,
   where,
-  writeBatch,
-  DocumentData
 } from "firebase/firestore";
 import { useCategories } from "../shared/useCategories";
 import { useSubCategories } from "../shared/useSubCategories";

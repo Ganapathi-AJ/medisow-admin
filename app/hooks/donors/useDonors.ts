@@ -9,7 +9,6 @@ import {
   setDoc, 
   updateDoc, 
   deleteDoc,
-  DocumentData
 } from "firebase/firestore";
 
 interface Donor {
