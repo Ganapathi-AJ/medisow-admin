@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, Suspense } from "react";
 import { useFirebase } from "../../context/firebase-context";
 import { DocumentData } from "firebase/firestore";
 import Link from "next/link";
@@ -17,7 +17,7 @@ interface LabReport {
   updatedAt?: any;
 }
 
-export default function LabReportsListPage() {
+function LabReportsContent() {
   const {
     getLabReports,
     deleteLabReport,
@@ -522,5 +522,13 @@ export default function LabReportsListPage() {
         </div>
       )}
     </div>
+  );
+}
+
+export default function LabReportsListPage() {
+  return (
+    <Suspense fallback={<div className="flex justify-center items-center h-screen"><Loader2 className="animate-spin h-8 w-8" /></div>}>
+      <LabReportsContent />
+    </Suspense>
   );
 } 
