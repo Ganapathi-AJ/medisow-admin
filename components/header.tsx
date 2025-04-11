@@ -1,9 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
-import { Bell, Sun, Moon, Menu, X } from "lucide-react";
-import ThemeToggle from "./theme-toggle";
+import { Bell, Menu, X } from "lucide-react";
 import Sidebar from "./sidebar";
 
 export default function Header() {

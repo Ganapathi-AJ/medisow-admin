@@ -9,8 +9,7 @@ import {
   FileText,
   Droplet,
   LayoutDashboard,
-  ChevronDown,
-  ChevronRight
+  Ticket,
 } from "lucide-react";
 
 // Navigation items with nested items
@@ -78,6 +77,11 @@ const navItems = [
     title: "Donors",
     href: "/donors",
     icon: <Droplet className="h-5 w-5" />,
+  },
+  {
+    title: "Vouchers",
+    href: "/vouchers",
+    icon: <Ticket className="h-5 w-5" />,
   },
 ];
 
