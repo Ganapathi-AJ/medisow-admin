@@ -10,6 +10,7 @@ import {
   Droplet,
   LayoutDashboard,
   Ticket,
+  Bell,
 } from "lucide-react";
 
 // Navigation items with nested items
@@ -83,6 +84,11 @@ const navItems = [
     href: "/vouchers",
     icon: <Ticket className="h-5 w-5" />,
   },
+  {
+    title: "Notifications",
+    href: "/notifications",
+    icon: <Bell className="h-5 w-5" />,
+  }
 ];
 
 interface SidebarProps {

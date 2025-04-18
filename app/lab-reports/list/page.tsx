@@ -29,7 +29,7 @@ function LabReportsContent() {
   
   const router = useRouter();
   const searchParams = useSearchParams();
-  const categoryId = searchParams.get("categoryId");
+  const categoryId = searchParams?.get("categoryId");
 
   const [labReports, setLabReports] = useState<DocumentData[]>([]);
   const [loading, setLoading] = useState(true);
